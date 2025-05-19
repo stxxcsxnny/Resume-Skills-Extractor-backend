@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI(
-    title=os.getenv("APP_NAME", "FastAPI Backend"),
-    version=os.getenv("API_VERSION", "v1")
+     title="Resume Skills Extractor",
+    version="v1"
 )
 
 # Add CORS middleware
@@ -33,6 +33,6 @@ app.include_router(router, prefix="/api")
 def read_root():
     return {
         "message": "Hello World from FastAPI!",
-        "app_name": os.getenv("APP_NAME", "FastAPI Backend"),
+        "app_name": os.getenv("APP_NAME", "Resume Skills Extractor"),
         "version": os.getenv("API_VERSION", "v1")
     } 
