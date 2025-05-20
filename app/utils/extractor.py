@@ -39,7 +39,7 @@ SKILL_GROUPS = {
         "Leadership", "Teamwork", "Communication", "Problem Solving"
     ],
     "Languages": [
-        "English", "Hindi"
+      "English", "Hindi", "Spanish", "French", "German", "Chinese", "Japanese"
     ]
 }
 
